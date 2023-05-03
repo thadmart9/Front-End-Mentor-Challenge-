@@ -11,6 +11,36 @@ body {
     background-color: #FFFCF8;
 }
 
+/* ANIMATIONS ANIMATIONS*/
+
+.arrow {
+    animation: subtleMove 2s alternate-reverse infinite ease-in-out;
+}
+
+@keyframes subtleMove {
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(25px);
+    }
+}
+
+h1, h2, h3, p, .learnmore {
+    animation: fadeInUp 2s forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(30px);
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 /*  FONTS MOBILE FONTS MOBILE FONTS MOBILE */
 
 h1 {
@@ -50,8 +80,26 @@ p {
     font-size: 1.8rem;
     text-decoration: none;
     margin-top: 2em;
+    position: relative; /* make the parent element position: relative */
+}
+  
+.learnmore::after {
+    content: "";
+    position: absolute;
+    left: -5px;
+    right: -5px; /* adjust the value to extend to the right of the text */
+    bottom: -5px; /* adjust the value to control the overlap */
+    width: auto;
+    height: 13px;
+    background: #FEF2BA;
+    border-radius: 28px;
+    background-size: 1em;
+    z-index: -1; /* set the z-index to move it behind the text */
 }
 
+.learnmore:hover::after {
+    background: #FAD400;
+}
 
 /* HEADER HEADER HEADER HEADER HEADER  */
 
@@ -344,7 +392,7 @@ footer {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(1, 1fr);
         align-items: stretch;
-        min-height: 70vh;
+        min-height: 50vh;
         height: auto;
       }
       
@@ -354,7 +402,7 @@ footer {
         background-repeat: no-repeat;
         height: 50vh;
     }
-      }
+      
       
       .design p, .photography p {
         max-width: 25em;
@@ -366,7 +414,7 @@ footer {
     .user-testimonials {
         flex-direction: row;
         max-width: 1350px;
-        margin: 10em auto 10em auto;
+        margin: 15em auto 10em auto;
     }
 
 
@@ -382,6 +430,7 @@ footer {
         gap: 3.2em;
     }
 }
+
 
 
 
