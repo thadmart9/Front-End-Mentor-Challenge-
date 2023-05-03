@@ -231,3 +231,157 @@ footer {
     padding: 0;
     margin-top: 3em;
 }
+
+
+/* DESKTOP DESKTOP DESKTOP DESKTOP */
+
+@media screen and (min-width:900px) {
+
+    
+    .hide-desktop {
+        display: none;
+    }
+
+    .hide-mobile {
+        display: block;
+    }
+
+    /* TYPOGRAPHY TYPOGRAPHY */
+
+    h1 {
+        font-size: 5.6rem;
+    }
+
+    h2 {
+        font-size: 4rem;
+    }
+
+    h3 {
+        font-size: 2.8rem;
+    }
+
+    /* header header header*/
+
+    .wrapper nav ul {
+        font-family: Barlow;
+        font-size: 1.8rem;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        gap: 4.7em;
+        align-items: center;
+        list-style-type: none;
+    }
+
+    .contact-btn {
+        padding: 1.6em 3.2em;
+        border-radius: 2.8em;
+        border: none;
+        color: #24303E;
+        background-color: white;
+        font-size: 1.5rem;
+        font-family: Fraunces;
+        line-height: 0;
+        cursor: pointer;
+    }
+
+    .contact-btn:hover {
+        background-color: #78CEF5;
+        color: white;
+    }
+
+    .wrapper {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    /* HERO SECTION HERO SECTION */
+
+    .hero {
+        height: 70vh;
+    }
+
+
+     /* CONTECT CONTENT CONTENT CONTENT */
+
+     .transform, .stand {
+        height: 50vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+     }
+
+    .caption {
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }   
+
+    .wrapper2 {
+        width: 100%;
+        height: auto;
+        align-items: center;
+        text-align: left;
+        padding: 3em;
+        max-width: 45em;
+        justify-content: center;
+    }
+
+    .wrapper2 p {
+        margin-bottom: 4em;
+    }
+
+     .photo, .photo2 {
+        height: 100%;
+        background-position: center;
+     }
+
+     /* SERVICES SERVICES SERVICES SERVICES SERVICES*/
+
+     .services {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        align-items: stretch;
+        min-height: 70vh;
+        height: auto;
+      }
+      
+      .design, .photography {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 50vh;
+    }
+      }
+      
+      .design p, .photography p {
+        max-width: 25em;
+        align-self: center;
+      }
+
+    /* TESTIMONIALS TESTIMONIALS TESTIMONIALS */
+
+    .user-testimonials {
+        flex-direction: row;
+        max-width: 1350px;
+        margin: 10em auto 10em auto;
+    }
+
+
+    .projects {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+ 
+
+    .footer-nav {
+        max-width: 700px;
+        margin: 3em auto;
+        gap: 3.2em;
+    }
+}
+
+
+
